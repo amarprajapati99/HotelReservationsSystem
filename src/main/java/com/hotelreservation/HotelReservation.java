@@ -27,6 +27,12 @@ public class HotelReservation {
         int index = cheapRateHotels.indexOf(cheap);
         return hotelList.get(index).getName();
     }
+    /* @Description- added weekday and weekend rates for every hotel.*/
+    public boolean addHotelRates(String hotelName, double weekday, double weekend ) {
+        Hotel hotel = new Hotel(hotelName, weekday);
+        hotelList.add(hotel);
+        return !hotelList.isEmpty();
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the hotel reservation system");

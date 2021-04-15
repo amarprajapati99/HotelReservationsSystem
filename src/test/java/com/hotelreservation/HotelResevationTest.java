@@ -17,9 +17,9 @@ public class HotelResevationTest {
     }
 
     @Test
-    public void givenBookingDate_ShouldReturn_CheapestHotel(){
+    public void givenBookingDateShouldReturnCheapestHotel(){
         SimpleDateFormat df = new SimpleDateFormat("ddMMMMyyyy");
-        String inputDateString [] = {"10sep2020", "10sep2020"};
+        String inputDateString [] = {"10sep2020", "11sep2020"};
 
         Date[] inputDate = null;
         try {
@@ -36,6 +36,14 @@ public class HotelResevationTest {
                 hotelReservation.addHotel("Ridgewood", 1200.00) ;
         if (result)
             Assertions.assertEquals("Lakewood", hotelReservation.findCheapestHotel(inputDate));
+    }
+
+    @Test
+    public void givenWeekDayAndWeekendRatesForHotelsWhenAddedShouldReturnTrue() {
+        boolean result = hotelReservation.addHotelRates("Lakewood", 110.00, 90.00) &&
+                hotelReservation.addHotelRates("Bridgewood", 150.00, 50.00) &&
+                hotelReservation.addHotelRates("Ridgewood", 220.00, 150.00);
+        Assertions.assertTrue(result);
     }
 }
 
