@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotelreservation.HotelResevationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T03:48:34" hostname="DESKTOP-9TKB724" time="0.101">
+<testsuite name="com.hotelreservation.HotelResevationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T04:26:38" hostname="DESKTOP-9TKB724" time="0.075">
   <properties/>
-  <testcase name="givenHotelWhenAddedShouldReturnTrue()" classname="com.hotelreservation.HotelResevationTest" time="0.101"/>
+  <testcase name="givenBookingDate_ShouldReturn_CheapestHotel()" classname="com.hotelreservation.HotelResevationTest" time="0.075"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
