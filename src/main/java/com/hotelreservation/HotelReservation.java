@@ -33,6 +33,12 @@ public class HotelReservation {
         hotelList.add(hotel);
         return !hotelList.isEmpty();
     }
+    /* @Description- added rating for each hotel.*/
+    public boolean addHotelRating(String hotelName, int rating ) {
+        Hotel hotel = new Hotel(hotelName, (double) rating);
+        hotelList.add(hotel);
+        return !hotelList.isEmpty();
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the hotel reservation system");

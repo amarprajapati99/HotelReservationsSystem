@@ -45,5 +45,13 @@ public class HotelResevationTest {
                 hotelReservation.addHotelRates("Ridgewood", 220.00, 150.00);
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void givenRatingForHotelsWhenAddedShouldReturnTrue() {
+        boolean result = hotelReservation.addHotelRating("Lakewood",3) &&
+                hotelReservation.addHotelRating("Bridgewood", 4) &&
+                hotelReservation.addHotelRating("Ridgewood", 5);
+        Assertions.assertTrue(result);
+    }
 }
 
