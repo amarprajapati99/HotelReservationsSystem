@@ -1,14 +1,13 @@
 package com.hotelreservation;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Stream;
+
 /* @Description- add hotel name and rates for regular customer */
 public class HotelReservation {
     List<Hotel> hotelList = new ArrayList<>();
 
-        public boolean addHotel(String hotelName, Double rates) {
+    public boolean addHotel(String hotelName, Double rates) {
             Hotel hotel = new Hotel(hotelName, rates);
             hotelList.add(hotel);
             return !hotelList.isEmpty();
@@ -39,9 +38,8 @@ public class HotelReservation {
         hotelList.add(hotel);
         return !hotelList.isEmpty();
     }
-
     public static void main(String[] args) {
-        System.out.println("Welcome to the hotel reservation system");
+      System.out.println("Welcome to the hotel reservation system");
     }
 }
 

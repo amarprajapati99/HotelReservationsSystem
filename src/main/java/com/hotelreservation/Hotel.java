@@ -38,5 +38,4 @@ public class Hotel {
     public Double getWeekendRates() {
         return weekendRates;
     }
-
 }

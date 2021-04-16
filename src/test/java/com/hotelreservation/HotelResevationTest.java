@@ -11,13 +11,13 @@ public class HotelResevationTest {
     HotelReservation hotelReservation = new HotelReservation();
 
     @Test
-    public void givenHotelWhenAddedShouldReturnTrue() {
+    public void givenHotel_WhenAdded_shouldReturnTrue() {
         boolean result = hotelReservation.addHotel("Lakewood", 950.00);
         Assertions.assertTrue(result);
     }
 
     @Test
-    public void givenBookingDateShouldReturnCheapestHotel(){
+    public void givenBookingDate_shouldReturnCheapestHotel(){
         SimpleDateFormat df = new SimpleDateFormat("ddMMMMyyyy");
         String inputDateString [] = {"10sep2020", "11sep2020"};
 
@@ -39,7 +39,7 @@ public class HotelResevationTest {
     }
 
     @Test
-    public void givenWeekDayAndWeekendRatesForHotelsWhenAddedShouldReturnTrue() {
+    public void givenWeekDayAndWeek_endRatesForHotels_WhenAddedShouldReturnTrue() {
         boolean result = hotelReservation.addHotelRates("Lakewood", 110.00, 90.00) &&
                 hotelReservation.addHotelRates("Bridgewood", 150.00, 50.00) &&
                 hotelReservation.addHotelRates("Ridgewood", 220.00, 150.00);
@@ -47,7 +47,7 @@ public class HotelResevationTest {
     }
 
     @Test
-    public void givenRatingForHotelsWhenAddedShouldReturnTrue() {
+    public void givenRatingForHotels_WhenAddedShouldReturnTrue() {
         boolean result = hotelReservation.addHotelRating("Lakewood",3) &&
                 hotelReservation.addHotelRating("Bridgewood", 4) &&
                 hotelReservation.addHotelRating("Ridgewood", 5);
