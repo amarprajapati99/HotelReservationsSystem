@@ -6,3 +6,4 @@ gradle
 *.bat
 *.class
 gradlew
+.gitignore
